@@ -46,11 +46,12 @@ header.top{padding:28px 0 8px}
 .search input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--ink);font:inherit;font-size:16px;padding:12px 0}
 .search button{border:0;background:transparent;color:var(--ink3);font:inherit;font-size:15px;min-height:44px;min-width:44px;cursor:pointer;display:none}
 .search.has button{display:block}
-.tabs{display:flex;gap:8px;margin-top:10px;overflow-x:auto;scrollbar-width:none}
+.tabs{display:flex;gap:6px;margin-top:10px;overflow-x:auto;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
-.tab{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink2);font:inherit;font-size:16px;
-  min-height:44px;padding:0 16px;border-radius:22px;cursor:pointer;white-space:nowrap}
-.tab .n{color:var(--ink3);font-size:13px;margin-left:4px}
+.tab{flex:1 0 auto;border:1px solid var(--line);background:var(--card);color:var(--ink2);font:inherit;font-size:16px;
+  min-height:44px;padding:0 10px;border-radius:22px;cursor:pointer;white-space:nowrap}
+.tab .n{color:var(--ink3);font-size:12px;margin-left:3px}
+@media (min-width:640px){.tabs{gap:8px}.tab{flex:none;padding:0 18px}}
 .tab[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:var(--paper)}
 .tab[aria-pressed="true"] .n{color:inherit;opacity:.75}
 
