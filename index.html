@@ -176,11 +176,9 @@ const CATS = [
    { n:"寶嚴教育平台", d:"線上課程平台：探索課程、選課與學習紀錄。", s:"open", note:"個人學習需登入", k:"教育平台 學習平台 選課 課程 線上課程 報名",
      links:[["開啟","https://baoyan-web-255128169665.asia-east1.run.app/"],["探索課程","https://baoyan-web-255128169665.asia-east1.run.app/education/classical/courses/explore"]] }
   ]},
-  { name:"排課與規劃", items:[
+  { name:"排課", items:[
    { n:"EPIC 排課系統", d:"禪藝實相人文空間的課表、師資場地、報名與撞期檢查。", s:"lock", k:"課表 報名 epic 師資 場地",
-     links:[["開啟","https://twnyda07.github.io/epic-course/"]] },
-   { n:"五時八教改軸實施方案", d:"教育平台課程分類的改軸方案。", s:"lock", k:"教育平台 課程 判教",
-     links:[["開啟","https://twnyda07.github.io/baoyan-wushi-plan/"]] }
+     links:[["開啟","https://twnyda07.github.io/epic-course/"]] }
   ]},
   { name:"經典閱讀與查詢", items:[
    { n:"金剛經閱讀儀表板", d:"逐單元導讀與問答，每題可回查原文段落。", s:"open", k:"金剛經 般若 diamond sutra 英文",
@@ -209,14 +207,10 @@ const CATS = [
  ]},
  { id:"dharma", name:"法務", groups:[
   { name:"楞嚴大法會", items:[
-   { n:"楞嚴大法會工作 SOP", d:"各部門 SOP、每日流程、人力編制、壇場平面圖與通訊頻道。", s:"lock", k:"楞嚴 法會 sop 流程 平面圖",
+   { n:"楞嚴大法會工作 SOP", d:"各部門 SOP、每日流程、壇場平面圖與通訊頻道。", s:"lock", k:"楞嚴 法會 sop 流程 平面圖",
      links:[["開啟","https://twnyda07.github.io/lengyan-fahui-sop/"]] },
-   { n:"楞嚴大法會工作分派", d:"各部門、各組與職務的分派看板。", s:"lock", k:"楞嚴 法會 分派 分組 職務",
-     links:[["開啟","https://twnyda07.github.io/lengyan-fahui-teams/"]] },
    { n:"楞嚴三關觀照", d:"面相、掌紋、修法三關的線上自助入口。", s:"open", k:"楞嚴 三關 面相 掌紋 修法 耳根圓通",
-     links:[["開啟","https://twnyda07.github.io/baoyan-53can/fahui.html"]] },
-   { n:"2026 楞嚴法會座位統整", d:"法會已圓滿，保留座位與報到紀錄供回查。", s:"lock", done:true, k:"楞嚴 座位 報到 內壇",
-     links:[["開啟","https://twnyda07.github.io/lengyan-seating/"]] }
+     links:[["開啟","https://twnyda07.github.io/baoyan-53can/fahui.html"]] }
   ]},
   { name:"法會執事", items:[
    { n:"香燈執事 SOP", d:"各場法會與活動的香燈執事作業。", s:"lock", k:"香燈 sop 執事 法會",
@@ -225,12 +219,6 @@ const CATS = [
      links:[["開啟","https://twnyda07.github.io/xiangdeng-fanbai/"]] },
    { n:"寶嚴場佈標準作業 SOP", d:"各場法會的場地佈置作業與編碼。", s:"lock", k:"場佈 佈置 sop 場地",
      links:[["開啟","https://twnyda07.github.io/baoyan-changbu-sop/"]] }
-  ]},
-  { name:"戒會與大典", items:[
-   { n:"菩薩戒分班系統", d:"分班、出班迎請、公告與執事、異動紀錄、列印。", s:"lock", k:"菩薩戒 分班 戒會 引禮",
-     links:[["開啟","https://twnyda07.github.io/baoyan-pusajie-fenban/"]] },
-   { n:"開山動土大典 · 工作分派看板", d:"大典的組織圖與人員分派。", s:"lock", k:"動土 大典 分派 分組",
-     links:[["開啟","https://twnyda07.github.io/baoyan-groundbreaking-teams/"]] }
   ]},
   { name:"共修與結緣", items:[
    { n:"善財童子五十三參抽籤", d:"線上抽卡，附畫卡與經文出處。", s:"open", k:"善財 五十三參 53參 抽籤 華嚴",
@@ -242,23 +230,13 @@ const CATS = [
   ]}
  ]},
  { id:"admin", name:"行政事務", groups:[
-  { name:"財務與物資", items:[
-   { n:"寶嚴會計系統", d:"收支記帳、會計科目、統計與月報列印。", s:"lock", k:"會計 收支 記帳 月報 erp 帳",
-     links:[["開啟","https://twnyda07.github.io/baoyan-erp/"]] },
-   { n:"寶嚴財產管理系統", d:"財產登錄、照片與借用歸還。", s:"lock", k:"財產 資產 借用 歸還",
-     links:[["開啟","https://twnyda07.github.io/baoyan-assets/"]] },
-   { n:"寶嚴倉庫管理系統", d:"倉庫物品查詢與進出管理，分前台與後台。", s:"lock", k:"倉庫 庫存 物品",
-     links:[["開啟","https://twnyda07.github.io/baoyan-warehouse/"]] },
+  { name:"物資", items:[
    { n:"物料申請表單", d:"要書、經本、提袋、證書、念珠等物料，填這張。", s:"open", k:"物料 申請 經本 結緣品 念珠 表單",
-     links:[["填寫","https://forms.gle/KokMn6U2q7FQSkod8"]] },
-   { n:"寶嚴單據記帳 · 試用版", d:"收據拍照自動辨識分類並出報表，線上試用。", s:"open", k:"收據 單據 記帳 ocr 報帳",
-     links:[["開啟","https://twnyda07.github.io/baoyan-receipt-demo/"]] }
+     links:[["填寫","https://forms.gle/KokMn6U2q7FQSkod8"]] }
   ]},
-  { name:"場地、交通與器材", items:[
+  { name:"場地與器材", items:[
    { n:"Zoom 會議室預約", d:"預約寺內 Zoom 會議室帳號與時段。", s:"open", note:"管理需登入", k:"zoom 會議 預約 線上",
      links:[["開啟","https://twnyda07.github.io/baoyan-zoom-booking/"]] },
-   { n:"排車座位系統", d:"出坡、法會的車輛、座位與行李分配。", s:"lock", k:"排車 車輛 座位 行李 出坡 司機",
-     links:[["開啟","https://twnyda07.github.io/baoyan-paiche/"]] },
    { n:"小幫手對講機借用", d:"法會現場對講機領取與歸還登記。", s:"lock", k:"對講機 小幫手 借用 歸還",
      links:[["開啟","https://twnyda07.github.io/baoyan-xiaobangshou/"]] }
   ]},
@@ -271,10 +249,6 @@ const CATS = [
      links:[["開啟","https://twnyda07.github.io/baoyan-timeline/"]] },
    { n:"寶嚴永續展看板", d:"亞太永續博覽會展區看板的中英文案，含解說員模式。", s:"open", k:"永續 esg 展覽 看板 英文",
      links:[["開啟","https://twnyda07.github.io/baoyan-esg-expo/"]] }
-  ]},
-  { name:"已結束的活動", items:[
-   { n:"2026 德國．奧地利．法國弘法行程", d:"九月弘法行程，保留供回查。", s:"lock", done:true, k:"德國 法國 奧地利 弘法 行程 歐洲",
-     links:[["開啟","https://twnyda07.github.io/baoyan-europe-2026/"]] }
   ]}
  ]}
 ];
