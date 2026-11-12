@@ -121,6 +121,15 @@ footer p{margin:0}
 .toast{position:fixed;left:50%;bottom:calc(var(--navH) + env(safe-area-inset-bottom) + 16px);transform:translateX(-50%);
   background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:10px;font-size:15px;opacity:0;transition:opacity .2s;pointer-events:none;max-width:calc(100% - 32px);z-index:30}
 .toast.on{opacity:1}
+/* 本站資訊（寶嚴禪寺所有開發一律附） */
+.siteinfo{margin:30px auto 0; max-width:none; text-align:left; font-size:16px; line-height:1.85; color:var(--ink);
+  background:var(--card); border:1px solid var(--line); border-radius:4px; padding:16px 20px; margin-top:18px;}
+.siteinfo .si-h{color:var(--blue); font-weight:700; letter-spacing:.12em; margin-bottom:6px;}
+.siteinfo dl{display:grid; grid-template-columns:max-content 1fr; gap:4px 12px; margin:0;}
+.siteinfo dt{color:var(--ink3); white-space:nowrap;}
+.siteinfo dd{margin:0; color:var(--ink); word-break:break-word;}
+.siteinfo a{color:var(--blue); text-decoration:underline; text-underline-offset:3px; display:inline-block; padding:6px 0; margin:-6px 0;}
+@media(max-width:420px){ .siteinfo dl{grid-template-columns:1fr; gap:0;} .siteinfo dd{margin-bottom:6px;} }
 </style>
 </head>
 <body>
@@ -165,6 +174,15 @@ footer p{margin:0}
     <p>寶嚴山寶嚴禪寺．最後整理 2026-11-03</p>
     <button class="theme" id="theme" type="button">深色／淺色</button>
   </footer>
+<section class="siteinfo" aria-label="本站資訊">
+  <div class="si-h">本站資訊</div>
+  <dl>
+    <dt>名稱：</dt><dd>寶嚴系統總覽</dd>
+    <dt>網址：</dt><dd><a href="https://twnyda07.github.io/baoyan-systems/">twnyda07.github.io/baoyan-systems</a></dd>
+    <dt>特別功能：</dt><dd>把寶嚴常用的課程、法務與行政事務系統集中在一頁，點一下就開啟；可搜尋或依分類找；能複製連結貼到 LINE，也能加到手機主畫面；支援深色與淺色。</dd>
+    <dt>創作者／版權所有：</dt><dd>© 2026 寶嚴山寶嚴禪寺　保留一切權利</dd>
+  </dl>
+</section>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
